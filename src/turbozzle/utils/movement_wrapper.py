@@ -4,9 +4,12 @@ import time
 import turtle
 import typing
 
-from turbozzle.creator.levels import FILE_TO_LEVEL_MAP, LevelConfig, SquarePosition, get_color
-
-
+from turbozzle.creator.levels import (
+    FILE_TO_LEVEL_MAP,
+    LevelConfig,
+    SquarePosition,
+    get_color,
+)
 
 CONFIG_INFO: typing.Optional[LevelConfig] = None
 
@@ -79,7 +82,7 @@ def forward(num_pixels: int) -> None:
     CONFIG_INFO.register_position(_get_position(CONFIG_INFO, x, y))
     if CONFIG_INFO.is_done():
         while True:
-            time.sleep(.01)
+            time.sleep(0.01)
             turtle.left(10)
 
 
