@@ -53,7 +53,7 @@ def _sample_color(config: LevelConfig, x: int, y: int) -> typing.Optional[str]:
     return get_color(config.level_data[pos.row][pos.column])
 
 
-def init_maze(background_path: str, *, x: int, y: int, speed: int) -> None:
+def init_puzzle(background_path: str, *, x: int, y: int, speed: int) -> None:
     global CONFIG_INFO
 
     file_name = os.path.basename(background_path)

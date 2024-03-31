@@ -85,6 +85,39 @@ LEVEL_3 = [
 ]
 
 
+LEVEL_6 = [
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "b", "b", "b", "b", "b", "b", "b", "b", "b", "x"],
+    ["x", "x", "x", "b", "x", "x", "x", "x", "x", "x", "x", "b", "x"],
+    ["x", "x", "x", "b", "x", "b", "b", "b", "b", "b", "x", "b", "x"],
+    ["x", "x", "x", "b", "x", "b", "x", "x", "x", "b", "x", "b", "x"],
+    ["x", "x", "x", "b", "x", "b", "x", "y", "x", "b", "x", "b", "x"],
+    ["x", "x", "x", "b", "x", "b", "b", "b", "x", "b", "x", "b", "x"],
+    ["x", "x", "x", "b", "x", "x", "x", "x", "x", "b", "x", "b", "x"],
+    ["x", "x", "x", "b", "b", "b", "b", "b", "b", "b", "x", "b", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "b", "x"],
+    ["x", "g", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+]
+
+# A tree of some sort with yellow on the "leaves"
+LEVEL_7 = [
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+    ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
+]
+
 COLOR_MAPPING = {
     "g": "green",
     "x": "black",
@@ -99,10 +132,11 @@ def get_color(color_code: str) -> str:
 
 
 FILE_TO_LEVEL_MAP = {
-    "maze_0.png": LEVEL_0,
-    "maze_1.png": LEVEL_1,
-    "maze_2.png": LEVEL_2,
-    "maze_3.png": LEVEL_3,
+    "puzzle_0.png": LEVEL_0,
+    "puzzle_1.png": LEVEL_1,
+    "puzzle_2.png": LEVEL_2,
+    "puzzle_3.png": LEVEL_3,
+    "puzzle_6.png": LEVEL_6,
 }
 
 
@@ -116,12 +150,12 @@ class LevelConfig:
         self.file_name = file_name
         self.speed = speed
         self.level_data = level_data
-        self.goal_states: set[SquarePosition] = []
+        self.goal_states: set[SquarePosition] = set()
 
         for row_index, row in enumerate(level_data):
             for column_index, val in enumerate(row):
                 if val == "y":
-                    self.goal_states.append(SquarePosition(row_index, column_index))
+                    self.goal_states.add(SquarePosition(row_index, column_index))
 
     def register_position(self, pos: SquarePosition) -> None:
         if pos in self.goal_states:

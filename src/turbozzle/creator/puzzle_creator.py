@@ -1,7 +1,14 @@
 #! /usr/bin/env python3
 import turtle
 
-from turbozzle.creator.levels import LEVEL_0, LEVEL_1, LEVEL_2, LEVEL_3, get_color
+from turbozzle.creator.levels import (
+    LEVEL_0,
+    LEVEL_1,
+    LEVEL_2,
+    LEVEL_3,
+    LEVEL_6,
+    get_color,
+)
 
 
 def draw_box(t: turtle.Turtle, color: str) -> None:
@@ -52,4 +59,4 @@ def draw_level(level: list[list[str]]) -> None:
     screen.mainloop()
 
 
-draw_level(LEVEL_1)
+draw_level(LEVEL_6)
