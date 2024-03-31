@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-from turbozzle.utils.movement_wrapper import *
+import time
+
+from turbozzle.utils.movement_wrapper import forward, init_maze, left, on_red, right
 
 
 def solve_maze_0() -> None:
-    init_maze("CourseMaterial/03_advanced_programming/06_python_mazes/examples/maze_0.png", x=-250, y=0, speed=1)
+    init_maze("levels/maze_0.png", x=-250, y=0, speed=1)
 
     for i in range(10):
         if on_red():
@@ -12,7 +14,7 @@ def solve_maze_0() -> None:
 
 
 def solve_maze_1() -> None:
-    init_maze("CourseMaterial/03_advanced_programming/06_python_mazes/examples/maze_1.png", x=-300, y=-250, speed=0)
+    init_maze("levels/maze_1.png", x=-300, y=-250, speed=0)
 
     for i in range(11):
         forward(50)
@@ -22,7 +24,7 @@ def solve_maze_1() -> None:
 
 
 def solve_maze_2() -> None:
-    init_maze("CourseMaterial/03_advanced_programming/06_python_mazes/examples/maze_2.png", x=-300, y=-250, speed=0)
+    init_maze("levels/maze_2.png", x=-300, y=-250, speed=0)
 
     for i in range(21):
         forward(50)
@@ -31,7 +33,7 @@ def solve_maze_2() -> None:
 
 
 def solve_maze_3() -> None:
-    init_maze("CourseMaterial/03_advanced_programming/06_python_mazes/examples/maze_3.png", x=-300, y=-200, speed=0)
+    init_maze("levels/maze_3.png", x=-300, y=-200, speed=0)
 
     forward(50)
     for i in range(5):
