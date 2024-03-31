@@ -51,7 +51,7 @@ def solve_maze_3() -> None:
 if __name__ == "__main__":
     # solve_maze_0()
     # solve_maze_1()
-    # solve_maze_2()
-    solve_maze_3()
+    solve_maze_2()
+    # solve_maze_3()
 
     time.sleep(10)

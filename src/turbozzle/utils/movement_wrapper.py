@@ -4,13 +4,8 @@ import time
 import turtle
 import typing
 
-from turbozzle.creator.levels import FILE_TO_LEVEL_MAP, get_color
+from turbozzle.creator.levels import FILE_TO_LEVEL_MAP, LevelConfig, SquarePosition, get_color
 
-
-class LevelConfig(typing.NamedTuple):
-    file_name: str
-    speed: int
-    level_data: list[list[str]]
 
 
 CONFIG_INFO: typing.Optional[LevelConfig] = None
@@ -23,7 +18,7 @@ def __handle_speed(config: LevelConfig) -> None:
         time.sleep(wait)
 
 
-def sample_color(config: LevelConfig, x: int, y: int) -> typing.Optional[str]:
+def _get_position(config: LevelConfig, x: int, y: int) -> SquarePosition:
     level_data = config.level_data
 
     box_size = 50
@@ -47,7 +42,12 @@ def sample_color(config: LevelConfig, x: int, y: int) -> typing.Optional[str]:
     else:
         return None  # Vertically outside the grid
 
-    return get_color(level_data[row_index][column_index])
+    return SquarePosition(row_index, column_index)
+
+
+def _sample_color(config: LevelConfig, x: int, y: int) -> typing.Optional[str]:
+    pos = _get_position(config, x, y)
+    return get_color(config.level_data[pos.row][pos.column])
 
 
 def init_maze(background_path: str, *, x: int, y: int, speed: int) -> None:
@@ -75,6 +75,13 @@ def forward(num_pixels: int) -> None:
     __handle_speed(CONFIG_INFO)
     turtle.forward(num_pixels)
 
+    x, y = turtle.pos()
+    CONFIG_INFO.register_position(_get_position(CONFIG_INFO, x, y))
+    if CONFIG_INFO.is_done():
+        while True:
+            time.sleep(.01)
+            turtle.left(10)
+
 
 def left(degrees: int) -> None:
     assert CONFIG_INFO
@@ -94,7 +101,7 @@ def _on_color(color: str) -> bool:
     assert CONFIG_INFO
 
     x, y = turtle.pos()
-    return sample_color(CONFIG_INFO, int(x), int(y)) == color
+    return _sample_color(CONFIG_INFO, int(x), int(y)) == color
 
 
 def on_red() -> bool:
