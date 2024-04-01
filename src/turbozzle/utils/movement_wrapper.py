@@ -119,5 +119,9 @@ def on_blue() -> bool:
     return _on_color("blue")
 
 
+def on_purple() -> bool:
+    return _on_color("purple")
+
+
 def on_yellow() -> bool:
     return _on_color("yellow")
