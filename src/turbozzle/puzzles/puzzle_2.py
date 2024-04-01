@@ -3,11 +3,12 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red,
 
 
 def solve_puzzle_2() -> None:
-    forward()
-    if on_red():
+    for i in range(11):
+        forward()
         left(90)
-    solve_puzzle_2()
+        forward()
+        right(90)
 
 
-init_puzzle("levels/puzzle_2.png", x=-300, y=-250, speed=2)
+init_puzzle("levels/puzzle_2.png", x=-300, y=-250, speed=0)
 solve_puzzle_2()
