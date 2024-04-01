@@ -10,9 +10,9 @@ def solve_puzzle_5() -> None:
     forward()
     right(90)
     if on_red():
-        left(90)
+        right(90)
     solve_puzzle_5()
 
 
-init_puzzle("levels/puzzle_5.png", x=-250, y=0, speed=0)
+init_puzzle("levels/puzzle_5.png", x=-300, y=0, speed=0)
 solve_puzzle_5()

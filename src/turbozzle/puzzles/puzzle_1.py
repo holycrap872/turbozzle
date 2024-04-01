@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import time
-
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right
 
 

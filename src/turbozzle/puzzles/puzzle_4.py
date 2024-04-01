@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import time
-
 from turbozzle.utils.movement_wrapper import (
     forward,
     init_puzzle,
@@ -21,5 +19,5 @@ def solve_puzzle_4() -> None:
     solve_puzzle_4()
 
 
-init_puzzle("levels/puzzle_4.png", x=-300, y=-300, speed=0)
+init_puzzle("levels/puzzle_4.png", x=-250, y=-250, speed=0)
 solve_puzzle_4()
