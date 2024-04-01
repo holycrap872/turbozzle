@@ -7,3 +7,11 @@ In addition, the lesson is designed to help students who are working with
 `vscode` for the first time start to understand why it can be such a powerful
 (and confusing) editor.
 
+## Instructions
+
+The code is paired with [this PRIMM-based worksheet](https://docs.google.com/document/d/1fekLawCFuocIC7UNs41wR1hAvdX_QMzMMIOz599dnUU)
+that guides students through the problems and asks questions intending to make
+them think more deeply about how the puzzles pertain to concepts they've
+learned.
+
+> Note: The version of the code to be used by students is on the `for_students` branch.
