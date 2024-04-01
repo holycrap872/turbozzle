@@ -5,7 +5,7 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red,
 def solve_puzzle_2() -> None:
     forward()
     if on_red():
-        left(90)
+        right(90)
     solve_puzzle_2()
 
 
