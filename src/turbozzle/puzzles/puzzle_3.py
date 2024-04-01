@@ -6,16 +6,16 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red,
 
 def solve_puzzle_3() -> None:
 
-    forward(50)
+    forward()
     for i in range(5):
         for i in range(2):
-            forward(50)
+            forward()
         left(90)
         for i in range(7):
-            forward(50)
+            forward()
         left(180)
         for i in range(7):
-            forward(50)
+            forward()
         left(90)
 
 

@@ -9,7 +9,7 @@ def make_tree(f: int) -> None:
         return
 
     for i in range(f):
-        forward(50)
+        forward()
 
     left(90)
     make_tree(f - 1)
@@ -18,7 +18,7 @@ def make_tree(f: int) -> None:
     right(90)
 
     for i in range(f):
-        forward(50)
+        forward()
     right(180)
 
 

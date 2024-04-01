@@ -8,7 +8,7 @@ def solve_puzzle_6() -> None:
 
     for i in range(10, 0, -1):
         for _ in range(i):
-            forward(50)
+            forward()
         left(90)
 
 

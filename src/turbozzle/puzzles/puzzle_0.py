@@ -8,7 +8,7 @@ def solve_puzzle_0() -> None:
     for i in range(10):
         if on_red():
             left(90)
-        forward(50)
+        forward()
 
 
 init_puzzle("levels/puzzle_0.png", x=-250, y=0, speed=1)

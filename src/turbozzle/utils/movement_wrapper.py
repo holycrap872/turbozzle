@@ -72,11 +72,11 @@ def init_puzzle(background_path: str, *, x: int, y: int, speed: int) -> None:
     turtle.speed(speed)
 
 
-def forward(num_pixels: int) -> None:
+def forward() -> None:
     assert CONFIG_INFO
 
     __handle_speed(CONFIG_INFO)
-    turtle.forward(num_pixels)
+    turtle.forward(50)
 
     x, y = turtle.pos()
     CONFIG_INFO.register_position(_get_position(CONFIG_INFO, x, y))

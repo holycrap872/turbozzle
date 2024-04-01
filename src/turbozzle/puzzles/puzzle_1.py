@@ -6,9 +6,9 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red,
 
 def solve_puzzle_1() -> None:
     for i in range(11):
-        forward(50)
+        forward()
         left(90)
-        forward(50)
+        forward()
         right(90)
 
 
