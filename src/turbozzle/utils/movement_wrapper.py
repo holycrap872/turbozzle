@@ -21,7 +21,7 @@ def __handle_speed(config: LevelConfig) -> None:
         time.sleep(wait)
 
 
-def _get_position(config: LevelConfig, x: int, y: int) -> SquarePosition:
+def _get_position(config: LevelConfig, x: int, y: int) -> typing.Optional[SquarePosition]:
     level_data = config.level_data
 
     box_size = 50
@@ -50,6 +50,9 @@ def _get_position(config: LevelConfig, x: int, y: int) -> SquarePosition:
 
 def _sample_color(config: LevelConfig, x: int, y: int) -> typing.Optional[str]:
     pos = _get_position(config, x, y)
+    if not pos:
+        return None
+
     return get_color(config.level_data[pos.row][pos.column])
 
 
@@ -79,7 +82,10 @@ def forward() -> None:
     turtle.forward(50)
 
     x, y = turtle.pos()
-    CONFIG_INFO.register_position(_get_position(CONFIG_INFO, x, y))
+    pos = _get_position(CONFIG_INFO, int(x), int(y))
+    if pos:
+        CONFIG_INFO.register_position(pos)
+
     if CONFIG_INFO.is_done():
         while True:
             time.sleep(0.01)
