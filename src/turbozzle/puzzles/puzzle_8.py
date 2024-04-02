@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-import time
-
-from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right
+from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, right
 
 
 def solve_puzzle_8() -> None:
 
-    for i in range(10, 0, -1):
+    right(90)
+    for i in range(1, 10):
         for _ in range(i):
             forward()
-        left(90)
+        right(90)
 
 
-init_puzzle("levels/puzzle_8.png", x=-250, y=-250, speed=0)
+init_puzzle("levels/puzzle_8.png", x=50, y=0, speed=0)
 solve_puzzle_8()
+
+input("Hit enter to exit")

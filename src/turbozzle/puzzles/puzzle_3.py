@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right
+from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, right
 
 
 def solve_puzzle_3() -> None:
