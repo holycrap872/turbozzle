@@ -63,4 +63,4 @@ def draw_level(level: list[list[str]]) -> None:
     screen.mainloop()
 
 
-draw_level(LEVEL_0)
+draw_level(LEVEL_8)
