@@ -2,7 +2,6 @@
 import turtle
 
 from turbozzle.creator.levels import (
-    LEVEL_0,
     LEVEL_1,
     LEVEL_2,
     LEVEL_3,
@@ -10,6 +9,8 @@ from turbozzle.creator.levels import (
     LEVEL_5,
     LEVEL_6,
     LEVEL_7,
+    LEVEL_8,
+    LEVEL_9,
     get_color,
 )
 

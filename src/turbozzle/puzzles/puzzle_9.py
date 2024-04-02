@@ -22,12 +22,12 @@ def make_tree(f: int) -> None:
     right(180)
 
 
-def solve_puzzle_7() -> None:
+def solve_puzzle_9() -> None:
     make_tree(4)
     right(180)
     make_tree(4)
 
 
-init_puzzle("levels/puzzle_7.png", x=-0, y=0, speed=0)
-solve_puzzle_7()
+init_puzzle("levels/puzzle_9.png", x=-0, y=0, speed=0)
+solve_puzzle_9()
 time.sleep(10)
