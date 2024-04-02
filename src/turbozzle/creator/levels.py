@@ -170,6 +170,10 @@ LEVEL_9 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
 ]
 
+
+MY_LEVEL = []
+
+
 COLOR_MAPPING = {
     "g": "green",
     "x": "black",
@@ -194,6 +198,7 @@ FILE_TO_LEVEL_MAP = {
     "puzzle_7.png": LEVEL_7,
     "puzzle_8.png": LEVEL_8,
     "puzzle_9.png": LEVEL_9,
+    "my_puzzle.png": MY_LEVEL,
 }
 
 
