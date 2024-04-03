@@ -15,3 +15,11 @@ them think more deeply about how the puzzles pertain to concepts they've
 learned.
 
 > Note: The version of the code to be used by students is on the `for_students` branch.
+
+## Citations
+
+- Robozzle: a great logic game where you can build you own programming puzzles
+    - http://www.robozzle.com
+- Inspiration for doing a Python version of Robozzle for learning purposes
+    - https://www.pythonclassroom.com/turtle-graphics/turtle-maze
+
