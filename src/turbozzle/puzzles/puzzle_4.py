@@ -7,7 +7,7 @@ def helper_function_1():
         "CAN REPLACE"
 
 
-def solve_puzzle_4() -> None:
+def solve_puzzle_4():
     for i in range("MUST REPLACE"):
         "CAN REPLACE"
         "CAN REPLACE"

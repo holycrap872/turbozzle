@@ -2,7 +2,7 @@
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right, wait_until_exit
 
 
-def solve_puzzle_7() -> None:
+def solve_puzzle_7():
     "YOUR CODE HERE"
 
 

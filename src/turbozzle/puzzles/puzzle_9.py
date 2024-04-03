@@ -2,11 +2,11 @@
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right, wait_until_exit
 
 
-def make_tree(f: int) -> None:
+def make_tree(trunk_len):
     "YOUR CODE HERE"
 
 
-def solve_puzzle_9() -> None:
+def solve_puzzle_9():
     "YOUR CODE HERE"
 
 

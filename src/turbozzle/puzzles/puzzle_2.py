@@ -2,7 +2,7 @@
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right, wait_until_exit
 
 
-def solve_puzzle_2() -> None:
+def solve_puzzle_2():
     forward()
     if on_red():
         right(90)
