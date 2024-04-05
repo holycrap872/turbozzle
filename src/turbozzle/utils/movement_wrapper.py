@@ -4,12 +4,7 @@ import time
 import turtle
 import typing
 
-from turbozzle.creator.levels import (
-    FILE_TO_LEVEL_MAP,
-    LevelConfig,
-    SquarePosition,
-    get_color,
-)
+from turbozzle.creator.levels import FILE_TO_LEVEL_MAP, LevelConfig, SquarePosition, get_color
 
 CONFIG_INFO: typing.Optional[LevelConfig] = None
 
