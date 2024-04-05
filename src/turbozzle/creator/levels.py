@@ -208,11 +208,12 @@ class SquarePosition(typing.NamedTuple):
 
 
 class LevelConfig:
-    def __init__(self, file_name: str, speed: int, level_data: list[list[str]]) -> None:
+    def __init__(self, file_name: str, speed: int, level_data: list[list[str]], screen) -> None:
         self.file_name = file_name
         self.speed = speed
         self.level_data = level_data
         self.goal_states: set[SquarePosition] = set()
+        self.screen = screen
 
         for row_index, row in enumerate(level_data):
             for column_index, val in enumerate(row):

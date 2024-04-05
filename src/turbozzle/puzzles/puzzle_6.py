@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right
+from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red, right, wait_until_exit
 
 
 def solve_puzzle_6() -> None:
@@ -14,3 +14,5 @@ def solve_puzzle_6() -> None:
 
 init_puzzle("levels/puzzle_6.png", x=-300, y=0, speed=0)
 solve_puzzle_6()
+
+wait_until_exit()

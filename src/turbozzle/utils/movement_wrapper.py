@@ -60,9 +60,12 @@ def init_puzzle(background_path: str, *, x: int, y: int, speed: int) -> None:
     global CONFIG_INFO
 
     file_name = os.path.basename(background_path)
-    CONFIG_INFO = LevelConfig(file_name, speed, FILE_TO_LEVEL_MAP[file_name])
+    screen = turtle.Screen()
 
-    turtle.bgpic(background_path)
+    CONFIG_INFO = LevelConfig(file_name, speed, FILE_TO_LEVEL_MAP[file_name], screen)
+
+    screen.title("Turbozzle")
+    screen.bgpic(background_path)
 
     # bring the turtle to the starting point
     turtle.penup()
@@ -131,3 +134,9 @@ def on_purple() -> bool:
 
 def on_yellow() -> bool:
     return _on_color("yellow")
+
+
+def wait_until_exit():
+    assert CONFIG_INFO
+
+    CONFIG_INFO.screen.mainloop()
