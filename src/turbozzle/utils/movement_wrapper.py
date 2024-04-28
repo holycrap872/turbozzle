@@ -16,6 +16,22 @@ def __handle_speed(config: LevelConfig) -> None:
         time.sleep(wait)
 
 
+def __draw_red_x() -> None:
+    turtle.speed(0)
+    turtle.pendown()
+    turtle.pencolor("red")
+    turtle.left(45)
+    turtle.forward(25)
+    turtle.forward(-50)
+    turtle.forward(25)
+    turtle.left(90)
+    turtle.forward(25)
+    turtle.forward(-50)
+    turtle.forward(25)
+    turtle.right(45)
+    turtle.penup()
+
+
 def _get_position(config: LevelConfig, x: int, y: int) -> typing.Optional[SquarePosition]:
     level_data = config.level_data
 
@@ -83,6 +99,13 @@ def forward() -> None:
     pos = _get_position(CONFIG_INFO, int(x), int(y))
     if pos:
         CONFIG_INFO.register_position(pos)
+
+    color = _sample_color(CONFIG_INFO, int(x), int(y))
+    if color == "black":
+        __draw_red_x()
+        while True:
+            time.sleep(0.01)
+            turtle.right(10)
 
     if CONFIG_INFO.is_done():
         while True:
