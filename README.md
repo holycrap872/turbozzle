@@ -7,6 +7,8 @@ In addition, the lesson is designed to help students who are working with
 `vscode` for the first time start to understand why it can be such a powerful
 (and confusing) editor.
 
+![Sample Game](./images/sample_game.png)
+
 ## Instructions
 
 The code is paired with a [PRIMM-based worksheet](https://docs.google.com/document/d/1fekLawCFuocIC7UNs41wR1hAvdX_QMzMMIOz599dnUU)
