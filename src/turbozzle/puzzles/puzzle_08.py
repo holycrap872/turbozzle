@@ -3,16 +3,10 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_red,
 
 
 def solve_puzzle_08() -> None:
-    forward()
-    left(90)
-    forward()
-    right(90)
-    if on_red():
-        right(90)
-    solve_puzzle_08()
+    "YOUR CODE HERE"
 
 
-init_puzzle("levels/puzzle_08.png", x=-300, y=0, speed=0)
+init_puzzle("levels/puzzle_08.png", x="MUST_REPLACE", y="MUST_REPLACE", speed=0)
 solve_puzzle_08()
 
 wait_until_exit()
