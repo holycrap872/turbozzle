@@ -7,6 +7,7 @@ from turbozzle.creator.levels import (
     LEVEL_02,
     LEVEL_03,
     LEVEL_04,
+    LEVEL_05,
     LEVEL_06,
     LEVEL_07,
     LEVEL_08,
@@ -66,4 +67,4 @@ def draw_level(level: list[list[str]]) -> None:
     screen.mainloop()
 
 
-draw_level(LEVEL_04)
+draw_level(LEVEL_05)
