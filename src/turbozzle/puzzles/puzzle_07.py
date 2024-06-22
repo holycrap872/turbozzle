@@ -3,19 +3,19 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_purp
 
 
 def solve_puzzle_07():
-    "REPLACE ME IF YOU'D LIKE"
-    "REPLACE ME IF YOU'D LIKE"
+    "CAN REPLACE"
+    "CAN REPLACE"
 
     if on_red():
-        "REPLACE ME IF YOU'D LIKE"
-        "REPLACE ME IF YOU'D LIKE"
+        "CAN REPLACE"
+        "CAN REPLACE"
 
     if on_purple():
-        "REPLACE ME IF YOU'D LIKE"
-        "REPLACE ME IF YOU'D LIKE"
+        "CAN REPLACE"
+        "CAN REPLACE"
 
-    "REPLACE ME IF YOU'D LIKE"
-    "REPLACE ME IF YOU'D LIKE"
+    "CAN REPLACE"
+    "CAN REPLACE"
 
     solve_puzzle_07()
 
