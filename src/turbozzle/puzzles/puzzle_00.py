@@ -2,7 +2,7 @@
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, wait_until_exit
 
 
-def solve_puzzle_00() -> None:
+def solve_puzzle_00():
     for i in range(9):
         forward()
 

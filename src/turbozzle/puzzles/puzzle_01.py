@@ -16,7 +16,7 @@ def go_five_spaces_then_turn():
     forward()
 
 
-def solve_puzzle_01() -> None:
+def solve_puzzle_01():
     for i in range(2):
         go_two_spaces_then_turn()
     for i in range(3):

@@ -2,7 +2,7 @@
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_purple, on_red, right, wait_until_exit
 
 
-def solve_puzzle_07() -> None:
+def solve_puzzle_07():
     "REPLACE ME IF YOU'D LIKE"
     "REPLACE ME IF YOU'D LIKE"
 
