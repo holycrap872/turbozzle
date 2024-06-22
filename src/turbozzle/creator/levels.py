@@ -18,7 +18,7 @@ _BLANK_LEVEL = [
 ]
 
 
-LEVEL_1 = [
+LEVEL_00 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
@@ -35,7 +35,7 @@ LEVEL_1 = [
 ]
 
 
-LEVEL_2 = [
+LEVEL_02 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "y", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "b", "x"],
@@ -52,7 +52,7 @@ LEVEL_2 = [
 ]
 
 
-LEVEL_3 = [
+LEVEL_03 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "y", "b"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "b", "b", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "b", "b", "x", "x"],
@@ -69,7 +69,7 @@ LEVEL_3 = [
 ]
 
 
-LEVEL_4 = [
+LEVEL_06 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
@@ -86,7 +86,7 @@ LEVEL_4 = [
 ]
 
 
-LEVEL_5 = [
+LEVEL_07 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "p", "b", "b", "b", "b", "b", "b", "b", "y", "b", "r", "x"],
     ["x", "p", "b", "y", "b", "b", "b", "b", "b", "b", "b", "r", "x"],
@@ -103,7 +103,7 @@ LEVEL_5 = [
 ]
 
 
-LEVEL_6 = [
+LEVEL_08 = [
     ["x", "x", "x", "x", "x", "x", "r", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "y", "b", "y", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "b", "b", "x", "b", "b", "x", "x", "x", "x"],
@@ -120,7 +120,7 @@ LEVEL_6 = [
 ]
 
 
-LEVEL_7 = [
+LEVEL_09 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "y", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "b", "x", "x", "x", "x", "x", "x"],
@@ -137,7 +137,7 @@ LEVEL_7 = [
 ]
 
 
-LEVEL_8 = [
+LEVEL_10 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "b", "b", "b", "b", "b", "b", "b", "b", "b", "x"],
@@ -154,7 +154,7 @@ LEVEL_8 = [
 ]
 
 
-LEVEL_9 = [
+LEVEL_11 = [
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x", "x"],
     ["y", "x", "x", "x", "y", "x", "x", "x", "y", "x", "x", "x", "y"],
@@ -189,15 +189,15 @@ def get_color(color_code: str) -> str:
 
 
 FILE_TO_LEVEL_MAP = {
-    "puzzle_1.png": LEVEL_1,
-    "puzzle_2.png": LEVEL_2,
-    "puzzle_3.png": LEVEL_3,
-    "puzzle_4.png": LEVEL_4,
-    "puzzle_5.png": LEVEL_5,
-    "puzzle_6.png": LEVEL_6,
-    "puzzle_7.png": LEVEL_7,
-    "puzzle_8.png": LEVEL_8,
-    "puzzle_9.png": LEVEL_9,
+    "puzzle_00.png": LEVEL_00,
+    "puzzle_02.png": LEVEL_02,
+    "puzzle_03.png": LEVEL_03,
+    "puzzle_06.png": LEVEL_06,
+    "puzzle_07.png": LEVEL_07,
+    "puzzle_08.png": LEVEL_08,
+    "puzzle_09.png": LEVEL_09,
+    "puzzle_10.png": LEVEL_10,
+    "puzzle_11.png": LEVEL_11,
     "my_puzzle.png": MY_LEVEL,
 }
 

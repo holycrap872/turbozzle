@@ -11,7 +11,7 @@ In addition, the lesson is designed to help students who are working with
 
 ## Instructions
 
-The code is paired with a [PRIMM-based worksheet](https://docs.google.com/document/d/1fekLawCFuocIC7UNs41wR1hAvdX_QMzMMIOz599dnUU)
+The code is paired with a [PRIMM-based worksheet](https://docs.google.com/document/d/1aCPLTZ5ZrnDYkBXXE87BTv3F9QBSN4nd8OhKO1DcTCc)
 that guides students through the problems and asks questions intending to make
 them think more deeply about how the puzzles pertain to concepts they've
 learned.
@@ -21,6 +21,7 @@ learned.
 ## Citations
 
 - Robozzle: a great logic game where you can build you own programming puzzles
-    - http://www.robozzle.com
-- Inspiration for doing a Python version of Robozzle for learning purposes
+    - Original version of RoboZZle: http://www.robozzle.com
+    - More stable version of RoboZZle: https://alexanderson1993.github.io/robozzle-react/
+- Inspiration for doing a Python version of RoboZZle for learning purposes
     - https://www.pythonclassroom.com/turtle-graphics/turtle-maze

@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 import turtle
 
-from turbozzle.creator.levels import LEVEL_1, LEVEL_2, LEVEL_3, LEVEL_4, LEVEL_5, LEVEL_6, LEVEL_7, LEVEL_8, LEVEL_9, MY_LEVEL, get_color
+from turbozzle.creator.levels import LEVEL_00, LEVEL_02, LEVEL_03, LEVEL_06, LEVEL_07, LEVEL_08, LEVEL_09, LEVEL_10, LEVEL_11, MY_LEVEL, get_color
 
 
 def draw_box(t: turtle.Turtle, color: str) -> None:
