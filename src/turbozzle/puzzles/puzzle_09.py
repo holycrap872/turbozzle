@@ -6,7 +6,7 @@ def solve_puzzle_09():
     "YOUR CODE HERE"
 
 
-init_puzzle("levels/puzzle_09.png", x=0, y=0, speed=0)
+init_puzzle("levels/puzzle_09.png", x="MUST_REPLACE", y="MUST_REPLACE", speed=0)
 solve_puzzle_09()
 
 wait_until_exit()
