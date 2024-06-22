@@ -2,13 +2,13 @@
 from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, wait_until_exit
 
 
-def go_two_spaces_then_turn():
+def do_something_1():
     forward()
     forward()
     left(90)
 
 
-def go_five_spaces_then_turn():
+def do_something_2():
     forward()
     forward()
     forward()
@@ -17,10 +17,13 @@ def go_five_spaces_then_turn():
 
 
 def solve_puzzle_01():
+    left(180)
+
     for i in range(2):
-        go_two_spaces_then_turn()
-    for i in range(3):
-        go_five_spaces_then_turn()
+        do_something_1()
+
+    for i in range(2):
+        do_something_2()
         left(90)
 
 

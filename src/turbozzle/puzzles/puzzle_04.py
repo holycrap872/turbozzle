@@ -19,9 +19,11 @@ def move_forward_4():
 
 def solve_puzzle_04():
     for i in range(4):
-        move_forward_4()
-        move_forward_1()
-        move_forward_3_and_turn()
+        "CAN REPLACE"
+        "CAN REPLACE"
+        "CAN REPLACE"
+        "CAN REPLACE"
+        "CAN REPLACE"
 
 
 init_puzzle("levels/puzzle_04.png", x=-200, y=-200, speed=0)

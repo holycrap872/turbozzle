@@ -3,16 +3,23 @@ from turbozzle.utils.movement_wrapper import forward, init_puzzle, left, on_purp
 
 
 def solve_puzzle_05():
-    left(90)
+    "CAN REPLACE"
+    "CAN REPLACE"
+
     while True:
-        forward()
+        "CAN REPLACE"
+        "CAN REPLACE"
+
         if on_red():
-            right(90)
+            "CAN REPLACE"
+            "CAN REPLACE"
+
         if on_purple():
-            left(90)
+            "CAN REPLACE"
+            "CAN REPLACE"
 
 
-init_puzzle("levels/puzzle_05.png", x=0, y=-250, speed=0)
+init_puzzle("levels/puzzle_05.png", x="MUST_REPLACE", y="MUST_REPLACE", speed=2)
 solve_puzzle_05()
 
 wait_until_exit()
